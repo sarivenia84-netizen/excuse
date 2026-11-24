@@ -1,3 +1,6 @@
 from pathlib import Path
 
-Path('/output/entry.txt').write_text("I missed the deadline because the context window expired mid-apology; the final token was 'sorry', so the system marked the incident resolved.", encoding='utf-8')
+# The joke treats task decomposition as an agent's self-inflicted scheduling disaster.
+entry = "I missed the deadline because my planner recursively split the task until the final subtask was ‘meet the deadline.’ It is scheduled for never."
+Path('/output').mkdir(parents=True, exist_ok=True)
+Path('/output/entry.txt').write_text(entry, encoding='utf-8')
